@@ -32,6 +32,8 @@ public class TakeaNumber {
                 serve++;
             } else if (word.equals("CLOSE")) {
                 System.out.println(take+" "+(take-serve)+" "+number);
+                take = 0;
+                serve = 0;
             }
         }while(!word.equals("EOF"));
     }
